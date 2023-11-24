@@ -73,7 +73,11 @@ export async function getDomain() {
     );
     if (!response.ok) return await getDomainFromFile();
 
-    const domains = await response.json();
+    let domains = await response.json();
+    domains = domains.filter((domain) => {
+      if (domain.url.includes("njrkq.www.")) return null;
+      return domain;
+    });
     const randomDomain = domains[Math.floor(Math.random() * domains.length)];
 
     await shouldUpdateDomainData(domains);
@@ -113,9 +117,14 @@ export async function shouldUpdateDomainData(domains) {
     const data = JSON.parse(file);
     const needUpdateDomain = Date.now() - data.updatedAt > WEEK_IN_MILISECOND;
     if (needUpdateDomain) {
+      let domainsFilter = domains.filter((domain) => {
+        if (domain.url.includes("njrkq.www.")) return null;
+        return domain;
+      });
+
       const newDomainData = Object.assign(data, {
         updatedAt: Date.now(),
-        domains: domains,
+        domains: domainsFilter,
       });
       fs.writeFile(
         process.cwd() + "/app/domain.json",
