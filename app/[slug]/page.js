@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { promises as fs } from "fs";
+import { getDomain } from "../utils";
 
 export default async function Page({ params }) {
-  const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
-  const data = JSON.parse(file);
+  const domain = await getDomain();
+  let cpaLink = `${domain}/?utm_source=da57dc555e50572d&s1=54794&s2=1962503&s3=meetnfuck&s5=${params.slug}&ban=twitter&j1=1`;
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-center p-15'>
@@ -13,7 +13,7 @@ export default async function Page({ params }) {
       </div>
       <h1 className='text-4xl font-semibold py-2'>Age Verification</h1>
       <p className='pb-8 font-light'>Are you at least 18 years old?</p>
-      <Link href={`${data.slugPage}${params.slug}${data.rest}`}>
+      <Link href={cpaLink}>
         <button className='flex justify-center items-center p-4 border-2  rounded bg-red-700 w-[250px] font-semibold'>
           YES
         </button>
