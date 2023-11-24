@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "meetnfuck",
+      name: "juicydate",
       script: "npm",
       args: "start",
       watch: true,

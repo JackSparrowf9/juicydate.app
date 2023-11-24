@@ -4,9 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Meet N Fuck | Want To Meet And Fuck Tonight?",
+  title: "Juicy Dates | Meet Hot and Wet Singles",
   description:
-    "Official Meet N Fuck App! Huge active fuckbook makes it easy to find a local fuck buddy to fuck now!",
+    "Jucydate – a sex dating site for married or single men and women looking for a casual fling. JucyDate chat is claimed to be 100% anonymous.",
 };
 
 export default function RootLayout({ children }) {

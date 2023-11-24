@@ -58,7 +58,6 @@ export async function authAccount() {
 export async function getDomain() {
   try {
     const getAuth = await authAccount();
-    // console.log(getAuth);
 
     const { auth, access_token } = getAuth;
     if (!auth) return await getDomainFromFile();
