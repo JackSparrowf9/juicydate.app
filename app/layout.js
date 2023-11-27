@@ -4,9 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Juicy Dates | Meet Hot and Wet Singles",
+  title: "Tinder XXX | Meet And Fuck Tonight?",
   description:
-    "Jucydate – a sex dating site for married or single men and women looking for a casual fling. JucyDate chat is claimed to be 100% anonymous.",
+    "Tinder XXX App is the #1 hookup site and free fuck app! Free fuckbook search. Find fuck buddies and get laid!",
 };
 
 export default function RootLayout({ children }) {

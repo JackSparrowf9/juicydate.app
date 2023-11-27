@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "juicydate",
+      name: "tinderxxx",
       script: "npm",
       args: "start",
       watch: true,

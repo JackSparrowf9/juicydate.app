@@ -6,7 +6,7 @@ import { getDomain } from "./utils";
 export default async function Home() {
   const domain = await getDomain();
 
-  let cpaLink = `${domain}/?utm_source=da57dc555e50572d&s1=54794&s2=1962632&s3=JuicyDate&s5=homePage&ban=twitter&j1=1`;
+  let cpaLink = `${domain}/?utm_source=da57dc555e50572d&s1=54794&s2=1253001&s3=TinderXXX&s5=HomePage&ban=twitter&j1=1`;
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-center p-15'>
