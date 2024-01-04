@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "tinderxxx",
+      name: "xlivesex.net",
       script: "npm",
       args: "start",
       watch: true,

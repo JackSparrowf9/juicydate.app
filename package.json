@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8887",
-    "server": "next build && next start -p 8887",
+    "start": "next start -p 8081",
+    "server": "next build && next start -p 8081",
     "lint": "next lint"
   },
   "dependencies": {
