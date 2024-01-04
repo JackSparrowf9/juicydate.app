@@ -4,9 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tinder XXX | Meet And Fuck Tonight?",
+  title: "xLiveSex: Free Live Sex Webcams and Adult Chat",
   description:
-    "Tinder XXX App is the #1 hookup site and free fuck app! Free fuckbook search. Find fuck buddies and get laid!",
+    "Free Live Sex Chat and XXX Porn shows for FREE without Registration! Watch Free Sex and Live Porn with Webcam Girls, Couples, Groups.",
 };
 
 export default function RootLayout({ children }) {

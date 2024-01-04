@@ -1,13 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getDomain } from "./utils";
+import { CONFIG } from "@/lib/config";
 
-export default async function Home() {
-  const domain = await getDomain();
-
-  let cpaLink = `${domain}/?utm_source=da57dc555e50572d&s1=54794&s2=1253001&s3=TinderXXX&s5=HomePage&ban=twitter&j1=1`;
-
+export default function Home() {
+  let chaturbate = CONFIG.chaturbate.LINKING_CODES.JoinPage_To_Female();
   return (
     <main className='flex min-h-screen flex-col items-center justify-center p-15'>
       <div className='fixed top-10 left-0 flex h-48 w-full items-end justify-center'>
@@ -15,7 +12,7 @@ export default async function Home() {
       </div>
       <h1 className='text-4xl font-semibold py-2'>Age Verification</h1>
       <p className='pb-8 font-light'>Are you at least 18 years old?</p>
-      <Link href={cpaLink}>
+      <Link href={chaturbate}>
         <button className='flex justify-center items-center p-4 border-2 rounded border-red-900 bg-red-700 w-[250px] font-semibold'>
           YES
         </button>
